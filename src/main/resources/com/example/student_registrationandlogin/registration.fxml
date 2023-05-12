@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_registrationandlogin.registrationController">
+   <children>
+      <HBox layoutX="-2.0" layoutY="-2.0" prefHeight="154.0" prefWidth="807.0">
+         <children>
+            <AnchorPane prefHeight="154.0" prefWidth="812.0" style="-fx-background-color: #0C134F;">
+               <children>
+                  <Label layoutX="215.0" layoutY="61.0" style="-fx-text-fill: white; -fx-font-size: 2em; -fx-font-weight: bolder;" text="Student Registration form" />
+                  <Hyperlink layoutX="684.0" layoutY="61.0" style="-fx-text-fill: # 070A52; -fx-font-size: 1.5em; -fx-font-weight: bolder;" text="Login" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutY="152.0" prefHeight="548.0" prefWidth="800.0">
+         <children>
+            <AnchorPane prefHeight="550.0" prefWidth="800.0">
+               <children>
+                  <Label layoutX="176.0" layoutY="68.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="Name/Username" />
+                  <TextField layoutX="176.0" layoutY="102.0" prefHeight="45.0" prefWidth="381.0" promptText="Enter your name" />
+                  <Label layoutX="176.0" layoutY="163.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="ID" />
+                  <TextField layoutX="176.0" layoutY="197.0" prefHeight="45.0" prefWidth="381.0" promptText="Enter your ID" />
+                  <Label layoutX="176.0" layoutY="257.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="Password" />
+                  <PasswordField layoutX="176.0" layoutY="291.0" prefHeight="45.0" prefWidth="381.0" promptText="Enter a password" />
+                  <Label layoutX="176.0" layoutY="352.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="Confirm Password" />
+                  <PasswordField layoutX="176.0" layoutY="386.0" prefHeight="45.0" prefWidth="381.0" promptText="Re-Enter your password" />
+                  <Label layoutX="248.0" layoutY="457.0" style="-fx-text-fill: #1D267D;" text="I have already an account " />
+                  <Label layoutX="421.0" layoutY="457.0" style="-fx-text-fill: #1B9C85;" text="Login here">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
