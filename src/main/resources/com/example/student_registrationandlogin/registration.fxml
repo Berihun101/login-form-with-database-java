@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_registrationandlogin.registrationController">
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.student_registrationandlogin.registrationController">
    <children>
       <HBox layoutX="-2.0" layoutY="-2.0" prefHeight="154.0" prefWidth="807.0">
          <children>
@@ -23,6 +30,16 @@
          <children>
             <AnchorPane prefHeight="550.0" prefWidth="800.0">
                <children>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="548.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="548.0" fitWidth="805.0" opacity="0.46">
+                           <image>
+                              <Image url="@../../../assets/logpic.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
                   <Label layoutX="176.0" layoutY="68.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="Name/Username" />
                   <TextField layoutX="176.0" layoutY="102.0" prefHeight="45.0" prefWidth="381.0" promptText="Enter your name" />
                   <Label layoutX="176.0" layoutY="163.0" style="-fx-font-size: 1.5em; -fx-font-weight: 700; -fx-text-fill: #0C134F;" text="ID" />
