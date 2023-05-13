@@ -14,7 +14,7 @@
       <ImageView fitHeight="400.0" fitWidth="693.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="400.0" fitWidth="693.0">
          <image>
-            <Image url="@log.jpg" />
+            <Image url="@../../../assets/log.jpg" />
          </image>
       </ImageView>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
@@ -26,8 +26,8 @@
                </font>
             </Label>
             <AnchorPane layoutX="111.0" layoutY="60.0" prefHeight="3.0" prefWidth="84.0" style="-fx-background-color: #76ff03;" />
-            <TextField fx:id="username" layoutX="119.0" layoutY="114.0" prefHeight="25.0" prefWidth="151.0" promptText="Username" style="-fx-border-width: 0;" styleClass="username" stylesheets="@css.css" />
-            <PasswordField fx:id="password" layoutX="119.0" layoutY="182.0" promptText="Password" style="-fx-border-width: 0;" styleClass="password" stylesheets="@css.css" />
+            <TextField fx:id="username" layoutX="119.0" layoutY="114.0" prefHeight="25.0" prefWidth="151.0" promptText="Username" style="-fx-border-width: 0;" stylesheets="@../../../styleSheets/css.css" />
+            <PasswordField fx:id="password" layoutX="119.0" layoutY="182.0" promptText="Password" style="-fx-border-width: 0;" stylesheets="@../../../styleSheets/css.css" />
             <Button layoutX="27.0" layoutY="233.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="251.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Tahoma Bold" size="20.0" />
@@ -46,6 +46,16 @@
             <ImageView layoutX="66.0" layoutY="103.0">
                <image>
                   <Image url="@icons8-person-40%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="75.0" layoutY="103.0">
+               <image>
+                  <Image url="@../../../assets/icons8-person-40%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="75.0" layoutY="169.0">
+               <image>
+                  <Image url="@../../../assets/icons8-lock-50.png" />
                </image>
             </ImageView>
          </children>
