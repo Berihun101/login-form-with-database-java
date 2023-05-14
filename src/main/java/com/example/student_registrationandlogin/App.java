@@ -14,7 +14,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("/com/example/student_registrationandlogin/CreateAccount"));
+        scene = new Scene(loadFXML("/com/example/student_registrationandlogin/registration"));
         scene.getStylesheets().add(getClass().getResource("/styleSheets/css.css").toExternalForm());
         stage.setTitle("Student App");
         // Image image = new Image("/images/android.png");

@@ -10,10 +10,21 @@ public class DatabaseConnection {
     private Statement stmt;
     private ResultSet result;
 
-    public DatabaseConnection() throws SQLException, ClassNotFoundException{
+    public DatabaseConnection(String query) {
+
+    }
+
+    public int DatabaseConnection(String query) throws SQLException, ClassNotFoundException{
         Class.forName(DB_DRIVER);
         connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
         stmt = connection.createStatement();
+        if(stmt.executeUpdate(query) == 1){
+            return 1;
+        }
+        else{
+            return  0;
+        }
+
     }
 
     public void close() throws SQLException {

@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.sql.*;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -104,6 +106,10 @@ public class CreateAccountController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
          
-    } 
+    }
+    @FXML
+    void toLoginPage(ActionEvent event) throws IOException {
+        App.sceneFactory("/com/example/student_registrationandlogin/login");
+    }
     
 }
