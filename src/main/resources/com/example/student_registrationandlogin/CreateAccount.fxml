@@ -48,5 +48,7 @@
             <Font name="Tahoma Bold" size="22.0" />
          </font>
       </Text>
+      <Label fx:id="lblSuccessMessage" layoutX="276.0" layoutY="61.0" style="-fx-text-fill: green; -fx-font-size: 1.2em;" />
+      <Label fx:id="lblErrorMessage" layoutX="426.0" layoutY="391.0" style="-fx-text-fill: red;" />
    </children>
 </AnchorPane>

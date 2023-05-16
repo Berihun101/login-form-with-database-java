@@ -10,6 +10,7 @@ public class DatabaseConnection {
     private Statement stmt;
     private ResultSet result;
 
+
     public DatabaseConnection(String query) {
 
     }
@@ -24,6 +25,8 @@ public class DatabaseConnection {
         else{
             return  0;
         }
+
+
 
     }
 
