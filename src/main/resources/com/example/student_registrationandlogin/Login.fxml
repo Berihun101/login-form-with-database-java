@@ -33,7 +33,7 @@
             <AnchorPane layoutX="264.0" layoutY="59.0" prefHeight="3.0" prefWidth="84.0" style="-fx-background-color: #76ff03;" />
             <TextField fx:id="username" layoutX="138.0" layoutY="159.0" prefHeight="46.0" prefWidth="305.0" promptText="Username" style="-fx-border-width: 0;" stylesheets="@../../../styleSheets/css.css" />
             <PasswordField fx:id="password" layoutX="138.0" layoutY="250.0" prefHeight="46.0" prefWidth="305.0" promptText="Password" style="-fx-border-width: 0;" stylesheets="@../../../styleSheets/css.css" />
-            <Button layoutX="165.0" layoutY="348.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="251.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
+            <Button fx:id="loginbtn" layoutX="165.0" layoutY="348.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="251.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Tahoma Bold" size="20.0" />
                </font>

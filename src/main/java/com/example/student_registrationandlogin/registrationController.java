@@ -45,17 +45,39 @@ public class registrationController {
     }
     @FXML
     void registerStudent(ActionEvent event) throws IOException, SQLException, ClassNotFoundException {
+        if(nameOfStud.getText().equals("") || idOfStud.getText().equals("") || depOfStud.getText().equals("") || yearOfStud.getText().equals("") ){
+            if(nameOfStud.getText().equals("")){
+                Shaker shaker = new Shaker(nameOfStud);
+                shaker.shake();
+            }  if (idOfStud.getText().equals("")) {
+                Shaker shaker = new Shaker(idOfStud);
+                shaker.shake();
+            }if (depOfStud.getText().equals("")) {
+                Shaker shaker = new Shaker(depOfStud);
+                shaker.shake();
+            }if (yearOfStud.getText().equals("")) {
+                Shaker shaker = new Shaker(yearOfStud);
+                shaker.shake();
+            }
+
+
+        }else {
       String name = nameOfStud.getText();
       int id = Integer.parseInt(idOfStud.getText());
       String department = depOfStud.getText();
       int year =Integer.parseInt(yearOfStud.getText());
 
-      String query = "insert into studentinfo (Name, ID, Department, year) values('\"+name+\"', \"+id+\", '\"+department+\"', \"+year+\" )\";" ;
-      DatabaseConnection value = new DatabaseConnection(query);
-      if(value.DatabaseConnection(query) == 1){
-          successlbl.setText("Registered successfully!");
-      }else{
-          successlbl.setText("Error in creating the database!");
-      }
+
+
+          String query = "insert into studentinfo (Name, ID, Department, year) values('"+name+"', "+id+", '"+department+"', "+year+" )";
+          DatabaseConnection value = new DatabaseConnection(query);
+          if(value.DatabaseConnection(query) == 1){
+              successlbl.setText("Registered successfully!");
+          }else{
+              successlbl.setText("Error in creating the database!");
+          }
+
+
+        }
     }
 }
