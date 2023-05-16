@@ -64,7 +64,8 @@ public class LoginController implements Initializable {
              String storeduserName = result.getString("username");
 
              if(storepassword.equals(passwordOfUser) & storeduserName.equals(usernameOfUser)){
-                 App.sceneFactory("/com/example/student_registrationandlogin/CreateAccount");
+                 App.sceneFactory("/com/example/student_registrationandlogin/Dashboard");
+              DashboardController.setUserName(result.getString("username"));
              }
              else{
                  Shaker shaker = new Shaker(username);
